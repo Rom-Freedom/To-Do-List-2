@@ -10,10 +10,10 @@ inputBx.addEventListener('keyup', function(event) {
 
 let addItem = (inputBx) => {
     let listItem = document.createElement('li');
-    listItem.innerHTML = `${inputBx}<i><i>`;
+    listItem.innerHTML = `${inputBx}<i></i>`;
 
     listItem.addEventListener('click', function() {
-        this.classList.toggle('dobe');
+        this.classList.toggle('done');
     })
 
     list.appendChild(listItem);
